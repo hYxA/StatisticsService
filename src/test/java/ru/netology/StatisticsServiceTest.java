@@ -23,9 +23,8 @@ class StatisticsServiceTest {
 
     @Test
     void calculateAverage() {
-        int summ = 180;
         int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long average = StatisticService.averageCalculate(summ, deals);
+        long average = StatisticService.averageCalculate(deals);
         assertEquals(expectedAverage, average);
 
     }
