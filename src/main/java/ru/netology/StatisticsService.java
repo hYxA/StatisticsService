@@ -17,13 +17,11 @@ public class StatisticsService {
     /**
      * расчёт среднего числа продаж в месяц
      */
-    public long averageCalculate(int summ, int[] deals) { //, long expectedAverage
+    public long averageCalculate(int[] deals) {
+        int summ = sumCalculate(deals);
         long average = summ / deals.length;
         return average;
     }
-
-
-    // забыл, как вернуть номер "такого-то" элемента массива, поэтому немного некрасиво
 
     /**
      * последний месяц с наивысшими продажами
