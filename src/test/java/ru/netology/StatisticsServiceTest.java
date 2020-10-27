@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StatisticsServiceTest {
-    int expectedSumm = 180;
     long expectedAverage = 15;
 
 
@@ -53,9 +52,8 @@ class StatisticsServiceTest {
     void calculateBelowAverage() {
 
         int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long average = 15;
         int expectedBelowAverage = 5;
-        int belowAverage = StatisticService.belowAverage(deals, average);
+        int belowAverage = StatisticService.belowAverage(deals);
         assertEquals(expectedBelowAverage, belowAverage);
 
     }
@@ -64,9 +62,8 @@ class StatisticsServiceTest {
     void calculateAboveAverage() {
 
         int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long average = 15;
         int expectedAboveAverage = 5;
-        int aboveAverage = StatisticService.aboveAverage(deals, average);
+        int aboveAverage = StatisticService.aboveAverage(deals);
         assertEquals(expectedAboveAverage, aboveAverage);
 
     }
