@@ -63,7 +63,7 @@ public class StatisticsService {
      * количество месяцев с количеством продаж ниже среднего
      */
     public int belowAverage(int[] deals) {
-        long average = averageCalculate(deals)
+        long average = averageCalculate(deals);
         int belowAverage = 0;
         for (int deal : deals) {
             if (deal < average) {
@@ -77,7 +77,7 @@ public class StatisticsService {
      * количество месяцев с количеством продаж выше среднего
      */
     public int aboveAverage(int[] deals) {
-        long average = averageCalculate(deals
+        long average = averageCalculate(deals);
         int aboveAverage = 0;
         for (int deal : deals) {
             if (deal < average) {

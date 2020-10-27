@@ -5,9 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StatisticsServiceTest {
-    long expectedAverage = 15;
-
-
+    
     StatisticsService StatisticService = new StatisticsService();
 
     @Test
@@ -22,6 +20,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateAverage() {
+        long expectedAverage = 15;
         int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long average = StatisticService.averageCalculate(deals);
         assertEquals(expectedAverage, average);
