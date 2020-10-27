@@ -1,11 +1,11 @@
 package ru.netology;
 
 public class StatisticsService {
-    int[] deals = new int[12]; // = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+  /*  int[] deals = new int[12]; // = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
     int expectedSumm;
     long average;
     int belowAverage = 0;
-    int aboveAverage = 0;
+    int aboveAverage = 0;*/
 
     /**
      * данные по месяцам
@@ -122,9 +122,9 @@ public class StatisticsService {
         int aboveAverage = 0;
         for (int deal : deals) {
             if (deal < average) {
-                belowAverage += 1;
+                aboveAverage += 1;
             }
         }
-        return belowAverage;
+        return aboveAverage;
     }
 }
