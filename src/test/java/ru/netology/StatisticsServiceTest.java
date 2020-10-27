@@ -8,14 +8,15 @@ class StatisticsServiceTest {
     int expectedSumm = 180;
     long expectedAverage = 15;
 
-    //int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+
     StatisticsService StatisticService = new StatisticsService();
 
     @Test
     void calculateSumm() {
 
         int[] deals = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int summ = StatisticService.sumCalculate(deals, expectedSumm);
+        int expectedSumm = 180;
+        int summ = StatisticService.sumCalculate(deals);
         assertEquals(expectedSumm, summ);
 
     }
